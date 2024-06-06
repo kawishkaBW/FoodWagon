@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodWagon</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .footer-div {
+            background-color: #212121;
+            margin-top: -5px;
+            padding: 50px;
+            color: white;
+
+        }
+
+        .top-cities {
+            margin-top: 20px;
+
+        }
+
+        .top-cities>span {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .cities {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            padding: 40px 0;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .column>span {
+            font-size: 16px;
+            font-weight: 500;
+            width: 18%;
+        }
+
+        .hr {
+            border: 1px solid #424242;
+        }
+
+        .text-area {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            padding-left: 40px;
+        }
+
+        .company {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            gap: 15px;
+        }
+
+        .company>span {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .company-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .follow-us-div {
+            display: flex;
+            gap: 10px;
+        }
+        .top-cities2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 50px 0;
+            gap: 10px;
+        }
+        .social-media{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .right{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="max-width">
+        <nav>
+            <div class="logo-div">
+                <img src="assets/log0.png" alt="logo">
+                <img src="assets/logoName.png" alt="logo name">
+            </div>
+            <div class="address-div">
+                <span>Diliver to:</span>
+                <img src="assets/map.png" alt="map logo" width="20px">
+                <span>current location</span>
+                <strong>address,address,adress......</strong>
+            </div>
+            <div class="login-div">
+                <div class="search-field">
+                    <img src="assets/Search.png" alt="search">
+                    <input type="text" placeholder="search Food" class="search-input">
+                </div>
+
+                <button class="login-button">
+                    <img src="assets/user.png" alt="">
+                    Login
+                </button>
+            </div>
+        </nav>
+    </div>
+    <section>
+        <div class="max-width">
+            <div class="main-div">
+                <aside>
+                    <h1>ARE YOU STARVING..?</h1>
+                    <p>Within a few clicks, find meals that are accessible near you</p>
+                    <div class="find-food-div">
+                        <div class="pickup-diliver-button-div">
+                            <button class="delivery-button">
+                                <img src="assets/delivery.png" alt="deliveryIcon">
+                                <strong>Delivery</strong>
+                            </button>
+                            <button class="pickup-button">
+                                <img src="assets/pickup.png" alt="pickUpIcon">
+                                <strong>PickUp</strong>
+                            </button>
+                        </div>
+                        <div class="address-find-div">
+                            <div class="address-input">
+                                <img src="assets/map-dark.png" alt="map dark icon">
+                                <input type="text" placeholder="enter your address">
+                            </div>
+                            <button class="find-button">
+                                <img src="assets/search-white.png" alt="find icon">
+                                <strong>Find Food</strong>
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+                <div class="main-image-div">
+                    <img src="assets/main-Image.png" alt="pizza" height="400px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="max-width">
+        <div class="food-container">
+            <div class="food-card">
+                <div class="food-div">
+                    <div class="discount-card">
+                        <span>15</span>
+                        <div class="card-details">
+                            <span class="precentage">%</span>
+                            <span class="off">OFF</span>
+                        </div>
+                    </div>
+                    <img src="assets/Image1.png" alt="image1" height="200px" width="250px">
+                </div>
+                <span class="food-description">Greys Vage</span>
+                <div class="remaining-days">
+                    6 Days Remaining
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-div">
+                    <div class="discount-card">
+                        <span>25</span>
+                        <div class="card-details">
+                            <span class="precentage">%</span>
+                            <span class="off">OFF</span>
+                        </div>
+                    </div>
+                    <img src="assets/Image2.png" alt="image1" height="200px" width="250px">
+                </div>
+                <span class="food-description">Greys Vage</span>
+                <div class="remaining-days">
+                    2 Days Remaining
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-div">
+                    <div class="discount-card">
+                        <span>10</span>
+                        <div class="card-details">
+                            <span class="precentage">%</span>
+                            <span class="off">OFF</span>
+                        </div>
+                    </div>
+                    <img src="assets/Image3.png" alt="image1" height="200px" width="250px">
+                </div>
+                <span class="food-description">Greys Vage</span>
+                <div class="remaining-days">
+                    9 Days Remaining
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-div">
+                    <div class="discount-card">
+                        <span>20</span>
+                        <div class="card-details">
+                            <span class="precentage">%</span>
+                            <span class="off">OFF</span>
+                        </div>
+                    </div>
+                    <img src="assets/Image4.png" alt="image1" height="200px" width="250px">
+                </div>
+                <span class="food-description">Greys Vage</span>
+                <div class="remaining-days">
+                    4 Days Remaining
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- how does it work -->
+    <div class="max-width">
+        <div style="background-color: #fff9ec">
+            <h1 class="how-it-work-text">How does it work.?</h1>
+            <div class="how-it-work-div">
+                <div class="step-card">
+                    <img src="assets/locationIcons.png" alt="location" height="130px" width="100px">
+                    <span>Select location</span>
+                    <p>Choose the location where your food will be delivered.</p>
+                </div>
+                <div class="step-card">
+                    <img src="assets/orderIcon.png" alt="location" height="130px" width="100px">
+                    <span>Choose order</span>
+                    <p>Check over hundreds of menus to pick your favorite food</p>
+                </div>
+                <div class="step-card">
+                    <img src="assets/payIcon.png" alt="location" height="130px" width="100px">
+                    <span>Pay advanced</span>
+                    <p>It's quick, safe, and simple. Select several methods of payment</p>
+                </div>
+                <div class="step-card">
+                    <img src="assets/mealIcon.png" alt="location" height="130px" width="100px">
+                    <span>Enjoy meals</span>
+                    <p>Food is made and delivered directly to your home.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- popular item -->
+    <div class="popular-item container">
+        <h1 class="popular-item-text">Popular Item</h1>
+        <div class="popular-item-div">
+            <button class="navigate-button">
+                <img src="assets/leftArrow.png" alt="left" height="40px">
+            </button>
+            <div class="card-container">
+                <div class="item-card">
+                    <img src="assets/popular1.png" alt="burger-image">
+                    <div class="detail-card">
+                        <span class="food-name">Cheese Burger</span>
+                        <div class="outlet-div">
+                            <img src="assets/map.png" alt="map icon" width="15px">
+                            <span>Burger Arena</span>
+                        </div>
+                        <span class="price-text">Rs.1290</span>
+                    </div>
+                    <button>Order Now</button>
+                </div>
+                <div class="item-card">
+                    <img src="assets/popular2.png" alt="burger-image">
+                    <div class="detail-card">
+                        <span class="food-name">Toffe’s Cake</span>
+                        <div class="outlet-div">
+                            <img src="assets/map.png" alt="map icon" width="15px">
+                            <span>Top Sticks</span>
+                        </div>
+                        <span class="price-text">Rs.1000</span>
+                    </div>
+                    <button>Order Now</button>
+                </div>
+                <div class="item-card">
+                    <img src="assets/popular3.png" alt="burger-image">
+                    <div class="detail-card">
+                        <span class="food-name">Dancake</span>
+                        <div class="outlet-div">
+                            <img src="assets/map.png" alt="map icon" width="15px">
+                            <span>Cake World</span>
+                        </div>
+                        <span class="price-text">Rs.1190</span>
+                    </div>
+                    <button>Order Now</button>
+                </div>
+                <div class="item-card">
+                    <img src="assets/popular4.png" alt="burger-image">
+                    <div class="detail-card">
+                        <span class="food-name">Crispy Sandwitch</span>
+                        <div class="outlet-div">
+                            <img src="assets/map.png" alt="map icon" width="15px">
+                            <span>Fastfood Dine</span>
+                        </div>
+                        <span class="price-text">Rs.990</span>
+                    </div>
+                    <button>Order Now</button>
+                </div>
+                <div class="item-card">
+                    <img src="assets/popular6.png" alt="burger-image">
+                    <div class="detail-card">
+                        <span class="food-name">Thai  Soup</span>
+                        <div class="outlet-div">
+                            <img src="assets/map.png" alt="map icon" width="15px">
+                            <span>Foody man</span>
+                        </div>
+                        <span class="price-text">Rs.1290</span>
+                    </div>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+
+            <button class="navigate-button">
+                <img src="assets/rightArrow.png" alt="left" height="40px">
+            </button>
+        </div>
+
+    </div>
+    <!-- featured resturent -->
+    <div class="max-width">
+        <div class="resturent-container">
+            <h1 class="popular-item-text">Featured Resturent</h1>
+            <div class="resturent-div">
+                <div class="resturent-card-container">
+                    <div class="resturent-card">
+                        <div class="image-container">
+                            <div class="image-lable">
+                                <div class="discount-lable">
+                                    <img src="assets/tag.png" alt="tag">
+                                    <span>20% OFF</span>
+                                </div>
+                                <div class="clock-lable">
+                                    <img src="assets/quick.png" alt="tag">
+                                    <span>Fast</span>
+                                </div>
+                            </div>
+
+                            <img src="assets/resturentItem1.png" alt="resturentImage">
+                        </div>
+
+                        <div class="resturent-detail-card">
+                            <img src="assets/resturent3.png" alt="resturent1">
+                            <div class="name-and-star">
+                                <span>FoodWorld</span>
+                                <div class="rating">
+                                    <img src="assets/star.png" alt="star" width="18px">
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-day">Open Tommorow</div>
+                    </div>
+                    <div class="resturent-card">
+                        <div class="image-container">
+                            <div class="image-lable">
+                                <div class="discount-lable">
+                                    <img src="assets/tag.png" alt="tag">
+                                    <span>20% OFF</span>
+                                </div>
+                                <div class="clock-lable">
+                                    <img src="assets/quick.png" alt="tag">
+                                    <span>Fast</span>
+                                </div>
+                            </div>
+
+                            <img src="assets/resturentItem3.png" alt="resturentImage">
+                        </div>
+
+                        <div class="resturent-detail-card">
+                            <img src="assets/resturent1.png" alt="resturent1">
+                            <div class="name-and-star">
+                                <span>Pizzahub</span>
+                                <div class="rating">
+                                    <img src="assets/star.png" alt="star" width="18px">
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-day">Open Tommorow</div>
+                    </div>
+                    <div class="resturent-card">
+                        <div class="image-container">
+                            <div class="image-lable">
+                                <div class="discount-lable">
+                                    <img src="assets/tag.png" alt="tag">
+                                    <span>20% OFF</span>
+                                </div>
+                                <div class="clock-lable">
+                                    <img src="assets/quick.png" alt="tag">
+                                    <span>Fast</span>
+                                </div>
+                            </div>
+
+                            <img src="assets/resturentItem4.png" alt="resturentImage">
+                        </div>
+
+                        <div class="resturent-detail-card">
+                            <img src="assets/resturent3.png" alt="resturent1">
+                            <div class="name-and-star">
+                                <span>Donuts hut</span>
+                                <div class="rating">
+                                    <img src="assets/star.png" alt="star" width="18px">
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-day">Open Tommorow</div>
+                    </div>
+                    <div class="resturent-card">
+                        <div class="image-container">
+                            <div class="image-lable">
+                                <div class="discount-lable">
+                                    <img src="assets/tag.png" alt="tag">
+                                    <span>20% OFF</span>
+                                </div>
+                                <div class="clock-lable">
+                                    <img src="assets/quick.png" alt="tag">
+                                    <span>Fast</span>
+                                </div>
+                            </div>
+
+                            <img src="assets/resturentItem5.png" alt="resturentImage">
+                        </div>
+
+                        <div class="resturent-detail-card">
+                            <img src="assets/resturent5.png" alt="resturent1">
+                            <div class="name-and-star">
+                                <span>Donuts hut</span>
+                                <div class="rating">
+                                    <img src="assets/star.png" alt="star" width="18px">
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-day">Open Tommorow</div>
+                    </div>
+                    <div class="resturent-card">
+                        <div class="image-container">
+                            <div class="image-lable">
+                                <div class="discount-lable">
+                                    <img src="assets/tag.png" alt="tag">
+                                    <span>20% OFF</span>
+                                </div>
+                                <div class="clock-lable">
+                                    <img src="assets/quick.png" alt="tag">
+                                    <span>Fast</span>
+                                </div>
+                            </div>
+
+                            <img src="assets/resturentItem6.png" alt="resturentImage">
+                        </div>
+
+                        <div class="resturent-detail-card">
+                            <img src="assets/resturent1.png" alt="resturent1">
+                            <div class="name-and-star">
+                                <span>FoodWorld</span>
+                                <div class="rating">
+                                    <img src="assets/star.png" alt="star" width="18px">
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-day">Open Now</div>
+                    </div>
+                    <div class="resturent-card">
+                        <div class="image-container">
+                            <div class="image-lable">
+                                <div class="discount-lable">
+                                    <img src="assets/tag.png" alt="tag">
+                                    <span>20% OFF</span>
+                                </div>
+                                <div class="clock-lable">
+                                    <img src="assets/quick.png" alt="tag">
+                                    <span>Fast</span>
+                                </div>
+                            </div>
+
+                            <img src="assets/resturentItem7.png" alt="resturentImage">
+                        </div>
+
+                        <div class="resturent-detail-card">
+                            <img src="assets/resturent1.png" alt="resturent1">
+                            <div class="name-and-star">
+                                <span>FoodWorld</span>
+                                <div class="rating">
+                                    <img src="assets/star.png" alt="star" width="18px">
+                                    <span>46</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="open-day">Open Now</div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <button class="view-all">
+                    <span>View All</span>
+                    <img src="assets/rightArrow.png" alt="rightArrow" width="15px">
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- searh by food -->
+    <div class="max-width">
+        <div class="search-topic-bar">
+            <h1 class="search-food-text">Search By Food</h1>
+            <div class="button-set">
+                <button class="view-all-search">
+                    <span>View All</span>
+                    <img src="assets/rightOrrange.png" alt="right arrow">
+                </button>
+                <button class="navigate-button">
+                    <img src="assets/leftArrow.png" alt="left" height="20px">
+                </button>
+                <button class="navigate-button">
+                    <img src="assets/rightArrow.png" alt="right" height="20px">
+                </button>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-item-card">
+                <img src="assets/searchfood1.png" alt="pizza">
+                <h3>pizza</h3>
+            </div>
+            <div class="search-item-card">
+                <img src="assets/searchfood2.png" alt="pizza">
+                <h3>Burger</h3>
+            </div>
+            <div class="search-item-card">
+                <img src="assets/searchfood3.png" alt="pizza">
+                <h3>Noodles</h3>
+            </div>
+            <div class="search-item-card">
+                <img src="assets/searchfood4.png" alt="pizza">
+                <h3>Sub-sandiwch</h3>
+            </div>
+            <div class="search-item-card">
+                <img src="assets/searchfood5.png" alt="pizza">
+                <h3>Chowmein</h3>
+            </div>
+            <div class="search-item-card">
+                <img src="assets/searchfood6.png" alt="pizza">
+                <h3>Steak</h3>
+            </div>
+        </div>
+    </div>
+    <!-- feature -->
+    <div class="feature-div">
+        <div class="feature-card">
+            <div class="feature">
+                <img src="assets/dailyDiscount.png" alt="dailyDiscount" height="100px">
+                <span>Daily Discount</span>
+            </div>
+            <div class="vr"></div>
+            <div class="feature">
+                <img src="assets/liveTracking.png" alt="dailyDiscount" height="100px">
+                <span>Live Tracing</span>
+            </div>
+            <div class="vr"></div>
+            <div class="feature">
+                <img src="assets/quickDelivery.png" alt="dailyDiscount" height="100px">
+                <span>Quick Delivery</span>
+            </div>
+        </div>
+    </div>
+    <!-- card component -->
+    <div class="max-width">
+        <div class="card-component-div">
+            <div class="card-component">
+                <div class="card-component-details">
+                    <span class="best">Best deals <span class="name">Crispy Sandwiches</span></span>
+                    <p>Enjoy the large size of sandwiches. Complete
+                        perfect slice of sandwiches.</p>
+                    <button class="view-all">
+                        <span>Proceed to order</span>
+                        <img src="assets/rightArrow.png" alt="rightArrow" width="15px">
+                    </button>
+                </div>
+                <img src="assets/cardComponent1.png" alt="card image">
+            </div>
+            <div class="card-component-reverse">
+                <div class="card-component-details">
+                    <span class="best">Celebrate parties
+                        with <span class="name">Fried Chicken</span></span>
+                    <p>Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out
+                        best deals for fried chicken.</p>
+                    <button class="view-all">
+                        <span>Proceed to order</span>
+                        <img src="assets/rightArrow.png" alt="rightArrow" width="15px">
+                    </button>
+                </div>
+                <img src="assets/cardComponent2.png" alt="card image">
+            </div>
+            <div class="card-component">
+                <div class="card-component-details">
+                    <span class="best">Wanna eat hot
+                        & spicy <span class="name">Pizza?</span></span>
+                    <p>Pair up with a friend and enjoy the
+                        hot and crispy pizza pops. Try it
+                        with the best deals.</p>
+                    <button class="view-all">
+                        <span>Proceed to order</span>
+                        <img src="assets/rightArrow.png" alt="rightArrow" width="15px">
+                    </button>
+                </div>
+                <img src="assets/cardComponent3.png" alt="card image">
+            </div>
+        </div>
+    </div>
+    <div class="bg-image-div">
+        <div class="bg-image">
+            <img src="assets/bg.png" alt="" height="282px">
+            <div class="bg-image-content">
+                <span>Are you ready to order with the best deals?</span>
+                <button>Proceed to order</button>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer-div">
+        <div class="top-cities">
+            <span class="top-ciyies-topic">Our Top Cities.</span>
+            <div class="cities">
+                <div class="column">
+                    <span>San Francisco</span>
+                    <span>Miami</span>
+                    <span>San Diego</span>
+                    <span>East Bay</span>
+                    <span>Long Beach</span>
+                    <span>Los Angeles</span>
+                    <span>Washington DC</span>
+                    <span>Seattle</span>
+                    <span>Portland</span>
+                    <span>Nashville</span>
+                    <span>New York City</span>
+                    <span>Orange County</span>
+                    <span>Atlanta</span>
+                    <span>Charlotte</span>
+                    <span>Denver</span>
+                    <span>Chicago</span>
+                    <span>Phoenix</span>
+                    <span>Las Vegas</span>
+                    <span>Sacramento</span>
+                    <span>Oklahoma City</span>
+                    <span>Columbus</span>
+                    <span>New Mexico</span>
+                    <span>Albuquerque</span>
+                    <span>Sacramento</span>
+                    <span>New Orleans</span>
+                </div>
+            </div>
+            <div class="hr"></div>
+
+        </div>
+        <div class="top-cities2">
+
+            <div class="text-area">
+                <div class="company">
+                    <span>Company</span>
+                    <div class="company-content">
+                        <span>About us</span>
+                        <span>Team</span>
+                        <span>Careers</span>
+                        <span>Blog</span>
+                    </div>
+                </div>
+                <div class="company">
+                    <span>Contact</span>
+                    <div class="company-content">
+                        <span>Help & Support</span>
+                        <span>Partner with us </span>
+                        <span>Ride with us</span>
+                    </div>
+                </div>
+                <div class="company">
+                    <span>Legal</span>
+                    <div class="company-content">
+                        <span>Terms & Conditions</span>
+                        <span>Refund & Cancellation</span>
+                        <span>Privacy Policy</span>
+                        <span>Cookie Policy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="follow-us-div">
+                <div class="follow-us">
+                    <span>FOLLOW US</span>
+                    <div class="social-media">
+                        <img src="assets/insta.png" alt="" height="45px">
+                        <img src="assets/facebook.png" alt="" height="35px">
+                        <img src="assets/twitter.png" alt="" height="30px">
+                    </div>
+                    <h3>Recieve exclusive offers in your mailbox.</h3>
+                    <div class="address-find-div">
+                        <div class="address-input">
+                            <img src="assets/envelope.png" alt="map dark icon">
+                            <input type="text" placeholder="enter your email">
+                        </div>
+                        <button class="find-button">
+                            <strong>subscribe</strong>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="hr"></div>
+        <div class="right">
+            <span>@ All Right Recived.</span>
+        </div>
+    </div>
+</body>
+
+</html>
